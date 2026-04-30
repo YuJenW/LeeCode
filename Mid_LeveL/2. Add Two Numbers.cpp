@@ -5,12 +5,12 @@ public:
         ListNode* cur = &dummy;
         int carry = 0;
 
-        while (l1 || l2 || carry) {
+        while (l1 || l2 || carry) {   /*確認這三個容器是否還有值*/
             int sum = carry;
 
             if (l1) {
-                sum += l1->val;
-                l1 = l1->next;
+                sum += l1->val;        /*get value*/
+                l1 = l1->next;         /*指向下一個*/
             }
 
             if (l2) {
